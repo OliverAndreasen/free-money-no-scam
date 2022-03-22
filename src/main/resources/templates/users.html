@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
+    <meta charset="UTF-8">
+    <title>Users</title>
+
+</head>
+<body>
+<ul th:each="user: ${users}">
+    <h3>User Id:</h3>
+    <p th:text="${user.getId()}"></p>
+    <h3>User Email:</h3>
+    <p th:text="${user.getEmail()}"></p>
+</ul>
+</body>
+</html>
